@@ -10,10 +10,9 @@ from WebServer import keep_alive
 from code1 import *
 from bottoken import token
 from nextcord.ext import commands
-from nextcord.ext.commands import has_permissions, MissingPermissions
+from nextcord.ext.commands import MissingPermissions
 from Cybernator import Paginator
 import asyncio
-import os
 import random
 import json
 from backlist import blackmember
@@ -24,7 +23,6 @@ from datetime import timedelta, datetime
 import datetime
 from speakIU import shards
 from prefix import *
-import chech
 import psutil
 import platform
 import aiohttp
