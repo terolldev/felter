@@ -44,6 +44,7 @@ async def on_ready():
     #await bot.change_presence(
     #        activity=discord.Custom(
     #            name=f'f+help | https://bot.felterbot.ga/'))
+    print(f"{bot.user}")
     await bot.change_presence(
             activity=discord.Streaming(
                 name=f'f+help | Hовый бот!', url='https://www.twitch.tv/tim_eiger', twitch_name="tim_eiger"))
