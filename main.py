@@ -54,17 +54,11 @@ async def on_message(message):
     prefixx = await bot.get_prefix(message)
     ping = round(bot.latency * 1000)
     p = prefixx
-    find = "https://discord.gg/"
     if message.content == "felter":
-      embed=nextcord.Embed(title="Справка по боту", description=f"Мой префикс - `{p}`\n Узнать мои команды - `{p}help`\n Мой пинг - ```cs\n#         {ping}ms     #\n```", colour=nextcord.Colour.random(), timestamp=datetime.datetime.now())
-      embed.set_footer(text=f"{message.author}", icon_url=f"{message.author.avatar}")
-      embed.set_author(name="Felter bot", icon_url="https://cdn.discordapp.com/attachments/888376246029918228/948743947088461834/777557308258517032.png")
-      await message.reply(embed=embed)
-    elif message.guild.id == 888347265482244116:
-      if find in message.content:       
-        if find in message.content:
-            await message.reply(embed=nextcord.Embed(title="АнтиСпам!", description="Я обнаружил ссылку нa сервер, мне пришлось её удалить!", colour=nextcord.Color.random(), timestamp=datetime.datetime.now()))
-            await message.delete()
+        embed=nextcord.Embed(title="Справка по боту", description=f"Мой префикс - `{p}`\n Узнать мои команды - `{p}help`\n Мой пинг - ```cs\n#         {ping}ms     #\n```", colour=nextcord.Colour.random(), timestamp=datetime.datetime.now())
+        embed.set_footer(text=f"{message.author}", icon_url=f"{message.author.avatar}")
+        embed.set_author(name="Felter bot", icon_url="https://cdn.discordapp.com/attachments/888376246029918228/948743947088461834/777557308258517032.png")
+        await message.reply(embed=embed)
     await bot.process_commands(message)
 
 @bot.event
