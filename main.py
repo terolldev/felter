@@ -311,7 +311,7 @@ class Code(commands.Cog):
 async def donation(ctx):
   embed=nextcord.Embed(
     title="Ссылки где покупать донат",
-    description="ДонейшенАлтертс = https://www.donationalerts.com/r/felterbotdnt\n для доната нужно в коментарии указать айди своего сервера, узнать его можно с помощью команды check", colour=netxcord.Colour.random(), timestamp=datetime.datetime.now()
+    description="ДонейшенАлтертс = https://www.donationalerts.com/r/felterbotdnt\n для доната нужно в коментарии указать айди своего сервера, узнать его можно с помощью команды check", colour=nextcord.Colour.random(), timestamp=datetime.datetime.now()
   )
   embed.set_footer(text=ctx.author, icon_url=ctx.author.avatar)
   await ctx.reply(embed=embed)
