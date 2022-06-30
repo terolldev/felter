@@ -182,7 +182,7 @@ async def on_command_error(ctx, error):
 @commands.cooldown(rate=1, per=10, type=commands.BucketType.user)
 @bot.command()
 async def meme_test(ctx):
-    embed = discord.Embed(title="Random mem", description="", colour=nextcord.Colour.random(), timestamp=datetime.datetime.now())
+    embed = nextcord.Embed(title="Random mem", description="", colour=nextcord.Colour.random(), timestamp=datetime.datetime.now())
 
     async with aiohttp.ClientSession() as cs:
         async with cs.get('https://www.reddit.com/r/dankmemes/new.json?sort=hot') as r:
