@@ -33,7 +33,6 @@ intents.all()
 #префикс бота
 bot = commands.AutoShardedBot(shard_count=shards, command_prefix=get_prefix)
 bot.remove_command('help')
-keep_alive()
 #@commands.is_owner()
 
 
