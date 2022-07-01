@@ -7,7 +7,7 @@ from goldpass import goldserver
 import datetime, time
 import nextcord
 from WebServer import keep_alive
-from code1 import *
+from code112 import *
 from bottoken import token
 from nextcord.ext import commands
 from nextcord.ext.commands import MissingPermissions
